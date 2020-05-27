@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>FCC Survey Form</title>
+</head>
+<body>
+    <section class="form-register">
+        <h1 id="title" class="text-center">Seguro para Mascotas</h1>
+        <h4>Formulario para solicitar cotizacion</h4>
+        <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su nombre">
+        <input class="controls" type="text" name="email" id="email" placeholder="Ingrese su email">
+        <input class="controls" type="text" name="number" id="number" placeholder="Ingrese su numero">
+        <div class="form-group">
+            <h5>¿Que mascota tienes?</h5>
+                
+                     <label>
+                    <input name="user-recommend" value="perro"
+                        type="radio" class="input-radio" 
+                        checked/>Perro</label>
+                    <label>
+                        <input name="user-recommend"
+                        value="gato" type="radio"
+                        class="input-radio"/>Gato</label>
+        </div>
+                
+        <div class="form-group">
+            <h5>¿Que cobertura deseas contratar?
+            </h5>
+      
+            <label>
+                <input name="prefer" value="respcivil" type="checkbox"
+                class="input-checkbox"/>Responsabilidad civil</label
+            >
+            <label>
+              <input name="prefer" value="robo"
+                type="checkbox" class="input-checkbox"/>Robo
+                </label>
+            <label>
+                <input name="prefer"
+                value="gastosvet" type="checkbox"
+                class="input-checkbox"/>Gastos Veterinarios
+            </label>
+            <label>
+                <input name="prefer" value="estadia" type="checkbox"
+                class="input-checkbox" />Estadia en residencia para animales
+                </label>
+            <label>
+                <input name="prefer" value="extravio" type="checkbox"
+                class="input-checkbox"/>Extravio de la mascota
+            </label>
+          </div>
+          <div class="form-group">
+            <h5>Selecciona forma de pago</h5>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Selecciona una opcion</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="tarjeta">Tarjeta de credito</option>
+              <option value="cbu">Debito de cuenta</option>
+      
+            </select>
+          </div>
+
+          <div class="form-group">
+                  <p>Ingresa algun comentario o sugerencia</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+        <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+        <input class="botons" type="submit" value="¡Contrata Ya!">
+        <p><a href="#">¿Deseas realizar otra cotizacion?</a></p>
+    </section>
+</body>
+</html>
